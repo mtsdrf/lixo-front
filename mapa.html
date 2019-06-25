@@ -21,24 +21,19 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-12">
-                <h2>Qual material deseja reciclar?</h2>
-                <select onchange="setMakers(this)" class="form-control form-control-sm">
-                    <option value="">Materiais...</option>
-                    <option value="papel">Papel</option>
-                    <option value="plastico">Plástico</option>
-                    <option value="vidro">Vidro</option>
-                    <option value="metal">Metal</option>
-                    <option value="organicos">Orgânicos</option>
-                    <option value="madeira">Madeira</option>
-                </select>
-            </div>
-            <div class="col-md-8 col-sm-12">
-                <div id="map" class="map"></div>
-            </div>
-        </div>
+    <div id="content">
+
+        <select id="select" onchange="setMakers(this)" class="form-control form-control-sm">
+            <option value="">Material a ser coletado...</option>
+            <option value="papel">Papel</option>
+            <option value="plastico">Plástico</option>
+            <option value="vidro">Vidro</option>
+            <option value="metal">Metal</option>
+            <option value="organicos">Orgânicos</option>
+            <option value="madeira">Madeira</option>
+        </select>
+
+        <div id="map" class="map"></div>
     </div>
     <script src="js/map.js"></script>
 </body>
