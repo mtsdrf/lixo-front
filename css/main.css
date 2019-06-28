@@ -21,3 +21,26 @@ html, body, .container, .row, #content{
 #content{
     position: relative;
 }
+
+.imgLoad{
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    opacity: 0.5;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.imgLoader > img{
+    height: auto;
+    width: 250px;
+}
+
+.imgLoader{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 15%;
+    z-index: 3;
+    position: absolute;
+}
